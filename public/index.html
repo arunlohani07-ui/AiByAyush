@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <title>AyushLohani's AI Agent</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="/avatar.jpg" alt="AI avatar" class="avatar">
+        <div>
+          <strong>AyushLohani's</strong>
+          <span>AI Agent</span>
+        </div>
+      </div>
+
+      <button class="new-chat" id="newChat">＋ New chat</button>
+      <div class="section-title">Conversations</div>
+      <div id="chatList" class="chat-list"></div>
+
+      <div class="sidebar-bottom">
+        <button class="side-btn" id="themeBtn">☾ <span>Theme</span></button>
+        <button class="side-btn" id="clearAll">⌫ <span>Clear chats</span></button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn mobile-only" id="menuBtn">☰</button>
+        <div class="top-title">
+          <span class="status-dot"></span>
+          <span>AyushLohani's AI Agent</span>
+        </div>
+        <button class="icon-btn" id="topTheme" title="Toggle theme">◐</button>
+      </header>
+
+      <section class="chat" id="chat">
+        <div class="welcome" id="welcome">
+          <img src="/avatar.jpg" class="welcome-avatar" alt="AI avatar">
+          <h1>How can I help?</h1>
+          <p>Ask anything. I’ll adapt to your language and conversation style.</p>
+          <div class="suggestions">
+            <button data-prompt="Explain this topic simply">Explain something</button>
+            <button data-prompt="Help me write something professionally">Write something</button>
+            <button data-prompt="Help me solve a coding problem">Help with code</button>
+            <button data-prompt="Teach me something interesting">Teach me</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="composer-wrap">
+        <div id="preview" class="preview hidden">
+          <img id="previewImg" alt="Selected image">
+          <button id="removeImage">×</button>
+        </div>
+
+        <form class="composer" id="composer">
+          <label class="attach" title="Upload image">
+            ＋
+            <input type="file" id="fileInput" accept="image/*">
+          </label>
+          <textarea id="input" rows="1" placeholder="Message AyushLohani's AI Agent..."></textarea>
+          <button type="button" class="tool-btn" id="micBtn" title="Voice input">🎙</button>
+          <button type="submit" class="send-btn" id="sendBtn" title="Send">➤</button>
+        </form>
+        <div class="hint">AI can make mistakes. Check important information.</div>
+      </div>
+    </main>
+  </div>
+  <script src="/script.js"></script>
+</body>
+  </html>
+
